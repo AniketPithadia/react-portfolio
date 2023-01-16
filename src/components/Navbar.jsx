@@ -18,7 +18,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 lg:px-20 sm:px-12 z-50">
+    <div className="fixed w-screen h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 lg:px-20 sm:px-12 z-50">
       <div>
         <img src={Logo} alt="My Initials" />
       </div>
