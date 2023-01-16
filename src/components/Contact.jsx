@@ -59,7 +59,7 @@ const Contact = () => {
               <a
                 href="https://www.linkedin.com/in/aniket-pithadia/"
                 target="_blank"
-                noreferre
+                rel="noreferrer"
                 className="text-gray-300 "
               >
                 <FaLinkedin size={30} />
@@ -69,20 +69,20 @@ const Contact = () => {
               <a
                 href="https://github.com/AniketPithadia"
                 target="_blank"
-                noreferre
+                rel="noreferrer"
                 className="text-gray-300 "
               >
                 <FaGithub size={30} />{" "}
               </a>
             </li>
-            <li className="bg-[#6fc2bf] rounded-full flex justify-center items-center p-4 mx-2 mb-3 ">
-              {" "}
-              <a href="/" className=" text-gray-300 ">
-                <HiOutlineMail size={30} />
-              </a>
-            </li>
+
             <li className="bg-[#565f69] rounded-full flex justify-center items-center p-4 mx-2 mb-3 ">
-              <a href="/" className=" text-gray-300 ">
+              <a
+                href="https://drive.google.com/file/d/1ooa6p1RnGpZZglgfybP8N0hcsbrrrO1g/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+                className=" text-gray-300 "
+              >
                 <BsFillPersonLinesFill className="" size={30} />
               </a>
             </li>

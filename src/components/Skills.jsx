@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
@@ -6,7 +6,8 @@ import react from "../assets/react.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import firebase from "../assets/firebase.png";
-import bootstrap from "../assets/bootstrap.png";
+import mongoDB from "../assets/mongo.png";
+import nodejs from "../assets/node.png";
 
 const Skills = () => {
   return (
@@ -45,25 +46,22 @@ const Skills = () => {
             <img src={react} className="w-20 mx-auto" alt={react} />
             <p className="my-4">React</p>
           </div>
-
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img src={github} className="w-20 mx-auto" alt={github} />
-            <p className="my-4">Github</p>
+            <img src={nodejs} className="w-20 mx-auto" alt={nodejs} />
+            <p className="my-4">Node</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img src={mongoDB} className="w-20 mx-auto" alt="MongoDB" />
+            <p className="my-4">MongoDB</p>
           </div>
 
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img src={firebase} className="w-20 mx-auto" alt={firebase} />
             <p className="my-4">Firebase</p>
           </div>
-
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img src={tailwind} className="w-20 mx-auto" alt={tailwind} />
-            <p className="my-4">Tailwind</p>
-          </div>
-
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img src={bootstrap} className="w-20 mx-auto" alt={bootstrap} />
-            <p className="my-4">Bootstrap</p>
+            <img src={github} className="w-20 mx-auto" alt={github} />
+            <p className="my-4">Github</p>
           </div>
         </div>
       </div>

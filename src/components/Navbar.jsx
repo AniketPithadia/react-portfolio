@@ -16,10 +16,9 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import Logo from "../assets/Logo2 .png";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-screen h-[80px] flex justify-between items-center px-4 bg-[#0e1b30] text-gray-300 lg:px-20 sm:px-12 z-50">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 lg:px-20 sm:px-12 z-50">
       <div>
         <img src={Logo} alt="My Initials" />
       </div>
@@ -52,7 +51,7 @@ const Navbar = () => {
         </li>
       </ul>
       {/* HamburgerMenu */}
-      <div className="md:hidden z-10 " onClick={handleClick}>
+      <div className="md:hidden z-10 " onClick={() => setNav(!nav)}>
         {!nav ? <FaBars fontSize="1.4rem" /> : <FaTimes fontSize="1.4rem" />}
       </div>
       {/* Mobile menu */}
@@ -60,28 +59,43 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "  absolute top-0 bottom left-0 w-full translate-x-100 h-screen flex flex-col justify-center items-center bg-[#0a192f] animation-pulse"
+            : "absolute top-0 bottom left-0 w-full translate-x-100 h-screen flex flex-col justify-center items-center bg-[#0a192f] animation-pulse"
         }
       >
         <li className="py-6 text-3xl">
-          <Link to="home" onClick={handleClick} smooth={true} duration={500}>
+          <Link
+            to="home"
+            onClick={() => setNav(!nav)}
+            smooth={true}
+            duration={500}
+          >
             Home
           </Link>
         </li>
         <li className="py-6 text-3xl">
-          <Link to="about" onClick={handleClick} smooth={true} duration={500}>
+          <Link
+            to="about"
+            onClick={() => setNav(!nav)}
+            smooth={true}
+            duration={500}
+          >
             About
           </Link>
         </li>
         <li className="py-6 text-3xl">
-          <Link to="skills" onClick={handleClick} smooth={true} duration={500}>
+          <Link
+            to="skills"
+            onClick={() => setNav(!nav)}
+            smooth={true}
+            duration={500}
+          >
             Skills
           </Link>
         </li>
         <li className="py-6 text-3xl">
           <Link
             to="projects"
-            onClick={handleClick}
+            onClick={() => setNav(!nav)}
             smooth={true}
             duration={500}
           >
@@ -89,7 +103,12 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="py-6 text-3xl">
-          <Link to="contact" onClick={handleClick} smooth={true} duration={500}>
+          <Link
+            to="contact"
+            onClick={() => setNav(!nav)}
+            smooth={true}
+            duration={500}
+          >
             Contact
           </Link>
         </li>
@@ -102,7 +121,7 @@ const Navbar = () => {
             <a
               href="https://www.linkedin.com/in/aniket-pithadia/"
               target="_blank"
-              noreferre
+              rel="noreferrer"
               className="flex justify-between items-center font-semibold text-gray-300 w-full"
             >
               LinkedIn <FaLinkedin size={30} />
@@ -112,23 +131,18 @@ const Navbar = () => {
             <a
               href="https://github.com/AniketPithadia"
               target="_blank"
-              noreferre
+              rel="noreferrer"
               className="flex justify-between items-center font-semibold text-gray-300 w-full"
             >
               Github <FaGithub size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-center items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2bf]">
-            <a
-              href="/"
-              className="flex justify-between font-semibold items-center text-gray-300 w-full"
-            >
-              Email <HiOutlineMail size={30} />
-            </a>
-          </li>
+
           <li className="w-[160px] h-[60px] flex justify-center items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <a
-              href="/"
+              href="https://drive.google.com/file/d/1ooa6p1RnGpZZglgfybP8N0hcsbrrrO1g/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
               className="flex justify-between items-center text-gray-300 font-semibold w-full"
             >
               Resume <BsFillPersonLinesFill size={30} />
