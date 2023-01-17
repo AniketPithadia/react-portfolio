@@ -11,7 +11,7 @@ import nodejs from "../assets/node.png";
 
 const Skills = () => {
   return (
-    <div name="skills" className="bg-[#0a192f] w-full text-gray-300 pt-20">
+    <div name="skills" className="bg-[#0a192f] w-full text-gray-300 pt-20 px-2">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
           <p className="text-4xl font-bold inline border-b-4 border-pink-600  ">
