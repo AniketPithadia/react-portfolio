@@ -89,7 +89,7 @@ const Contact = () => {
           </ul>
         </div>
         <div className="text-2xl text-[#fff] text-center italic flex py-4 ">
-          Made with 💓 Aniket Pithadia
+          Made with 💓 by Aniket Pithadia
         </div>
       </div>
     </>
