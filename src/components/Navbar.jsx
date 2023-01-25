@@ -112,6 +112,39 @@ const Navbar = () => {
             Contact
           </Link>
         </li>
+        <div className="flex justify-center items-center gap-[20px]">
+          <li className="p-3 rounded-full  bg-[#0B66C2]">
+            <a
+              href="https://www.linkedin.com/in/aniket-pithadia/"
+              target="_blank"
+              rel="noreferrer"
+              className="flex justify-between items-center font-semibold text-gray-300 w-full"
+            >
+              <FaLinkedin size={30} />
+            </a>
+          </li>
+          <li className="p-3 rounded-full  bg-black">
+            <a
+              href="https://github.com/AniketPithadia"
+              target="_blank"
+              rel="noreferrer"
+              className="flex justify-between items-center font-semibold text-gray-300 w-full"
+            >
+              <FaGithub size={30} />
+            </a>
+          </li>
+
+          <li className="p-3 rounded-full  bg-[#565f69]">
+            <a
+              href="https://drive.google.com/file/d/1ooa6p1RnGpZZglgfybP8N0hcsbrrrO1g/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+              className="flex justify-between items-center text-gray-300 font-semibold w-full"
+            >
+              <BsFillPersonLinesFill size={30} />
+            </a>
+          </li>
+        </div>
       </ul>
 
       {/* Social Icons */}
