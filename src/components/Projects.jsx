@@ -76,7 +76,7 @@ const Work = () => {
                   </button>
                 </a> */}
                 <a
-                  href="https://github.com/AniketPithadia/youtube-clone"
+                  href="https://github.com/AniketPithadia/YOUTUBE2.0"
                   rel="noreferrer"
                   target="_blank"
                 >
